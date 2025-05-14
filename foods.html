@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+        /* CSS untuk memperbesar judul */
+        h1 {
+            font-size: 3rem; /* Ukuran font besar */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            font-weight: bold; /* Menebalkan font */
+            color: #000000; /* Warna teks */
+            background-image: url(back3.jpg);
+            margin-top: 20px;
+        }
+
+        /* CSS untuk menata agar label berada di bawah gambar */
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Menyelaraskan item makanan di tengah */
+        }
+
+        .item {
+            width: 200px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item h3,
+        .item p {
+            margin-top: 10px;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MENU MAKANAN</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="foods.html">Makanan</a>
+            <a href="drinks.html">Minuman</a>
+            <a href="specials.html">Specials</a>
+            <a href="dasboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <div class="item" data-id="1" data-name="Pizza" data-price="50">
+            <img src="Chiken garden blue.jpg" alt="Chiken garden blue">
+            <h3>Chiken garden blue</h3>
+            <p>Rp 25.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="2" data-name="curry seasoned meat" data-price="30">
+            <img src="curry seasoned meat.jpg" alt="curry seasoned meat">
+            <h3>curry seasoned meat</h3>
+            <p>Rp 20.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="3" data-name="Nasi Goreng" data-price="25">
+            <img src="Chicken rice bowl 2.jpg" alt="Chicken rice bowl">
+            <h3>Chicken rice bowl</h3>
+            <p>Rp 25.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="4" data-name="Chicken by peach" data-price="35">
+            <img src="Chicken by peach.png" alt="Chicken by peach">
+            <h3>Chicken by peach</h3>
+            <p>Rp 25.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="5" data-name="Spaghetti sauce" data-price="20">
+            <img src="Spaghetti sauce.png" alt="Spaghetti sauce">
+            <h3>Spaghetti sauce</h3>
+                <p>Rp 20.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="6" data-name="Ayam Geprek" data-price="28">
+            <img src="Zupa sup.png" alt="Ayam Geprek">
+            <h3>Zupa sup</h3>
+            <p>Rp 28.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Toko Makanan RANGGA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

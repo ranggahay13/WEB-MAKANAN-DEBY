@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>    
+        /* CSS untuk memperbesar judul */
+        h1 {
+            font-size: 3rem; /* Ukuran font besar */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            font-weight: bold; /* Menebalkan font */
+            color: #000000; /* Warna teks */
+            margin-top: 20px;
+            background-image: url(back3.jpg);
+        }
+
+        /* CSS untuk menata agar label berada di bawah gambar */
+        .menu {
+            display: flex;
+            background-image: url(back3.jpg);
+            flex-wrap: wrap;
+            justify-content: center; /* Menyelaraskan item makanan di tengah */
+        }
+
+        .item {
+            width: 200px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item h3,
+        .item p {
+            margin-top: 10px;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MENU MINUMAN</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="foods.html">Makanan</a>
+            <a href="drinks.html">Minuman</a>
+            <a href="specials.html">Specials</a>
+            <a href="dasboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <div class="item" data-id="1" data-name="Beng beng latte " data-price="50">
+            <img src="Beng beng latte.jpg" alt="Beng beng latte ">
+            <h3>Beng beng latte </h3>
+            <p>Rp 15.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="2" data-name="Lumut ice latte" data-price="30">
+            <img src="Lumut ice latte.png" alt="Lumut ice latte">
+            <h3>Lumut ice latte</h3>
+            <p>Rp 15.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="3" data-name="Cocomelon ice" data-price="25">
+            <img src="Cocomelon ice.png" alt="Cocomelon ice">
+            <h3>Cocomelon ice</h3>
+            <p>Rp 15.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="4" data-name="Sate Ayam" data-price="35">
+            <img src="Sago ice strawberry.png" alt="Sate Ayam">
+            <h3>Sago ice strawberry</h3>
+            <p>Rp 15.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="5" data-name="Thai Smoothies" data-price="20">
+            <img src="Thai Smoothies.jpg" alt="Thai Smoothies">
+            <h3>Thai Smoothies</h3>
+            <p>Rp 20.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="item" data-id="6" data-name="Ayam Geprek" data-price="28">
+            <img src="ice cream.jpg" alt="Ayam Geprek">
+            <h3>ice cream</h3>
+            <p>Rp 10.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Toko Makanan deby</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
