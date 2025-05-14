@@ -11,7 +11,7 @@ addToCartButtons.forEach(button => {
         // Menambahkan produk ke keranjang
         cart.push({ id, name, price });
 
-        alert(`${name} berhasil ditambahkan ke keranjang!`);
+        alert(`${name} berhasil ditambahkan ke keranjang!`);gi
         updateCart();
     });
 });
